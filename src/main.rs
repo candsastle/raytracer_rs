@@ -36,7 +36,7 @@ fn main() {
     print!("P3\n{} {}\n255\n", IMAGE_WIDTH, IMAGE_HEIGHT);
 
     for j in (0..IMAGE_HEIGHT).rev() {
-        eprint!("\rScanlines remainging: {j}");
+        eprint!("\rScanlines remaining: {j}");
         for i in 0..IMAGE_WIDTH {
             let u = i as f64 / (IMAGE_WIDTH - 1) as f64;
             let v = j as f64 / (IMAGE_HEIGHT - 1) as f64;
